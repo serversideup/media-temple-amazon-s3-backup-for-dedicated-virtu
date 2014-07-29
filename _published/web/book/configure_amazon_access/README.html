@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Configure Amazon Access | Media Temple Amazon S3 Backup for DV (this works on other Linux servers too)</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../configure_plesk_for_full_backup/README.html" />
+    
+    
+    <link rel="prev" href="../prepare_the_server/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="2" data-basepath=".." data-revision="1406597186540">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Media Temple Amazon S3 Backup for DV (this works on other Linux servers too)</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+
+        
+
+        
+
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="prepare_the_server/README.html">
+            
+            <a href="../prepare_the_server/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> Prepare The Server
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="configure_amazon_access/README.html">
+            
+            <a href="../configure_amazon_access/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> Configure Amazon Access
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="configure_plesk_for_full_backup/README.html">
+            
+            <a href="../configure_plesk_for_full_backup/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> Configure Plesk for Full Backup
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="automating_the_process/README.html">
+            
+            <a href="../automating_the_process/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> Automating the Process
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="restoring_from_a_backup/README.html">
+            
+            <a href="../restoring_from_a_backup/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> Restoring From A Backup
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="taking_it_a_step_further/README.html">
+            
+            <a href="../taking_it_a_step_further/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> Taking It A Step Further
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="taking_it_a_step_further/article.html">
+            
+            <a href="../taking_it_a_step_further/article.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> Configure Retention Policies
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="taking_it_a_step_further/configure_subscription_specific_vhost_backups.html">
+            
+            <a href="../taking_it_a_step_further/configure_subscription_specific_vhost_backups.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> Configure Subscription Specific (Vhost) Backups
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="getting_help/README.html">
+            
+            <a href="../getting_help/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> Getting Help
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 22.22222222222222%;min-width: 11.11111111111111%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../prepare_the_server/README.html" title="Prepare The Server" class="chapter done new-chapter" data-progress="1" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../configure_amazon_access/README.html" title="Configure Amazon Access" class="chapter done new-chapter" data-progress="2" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../configure_plesk_for_full_backup/README.html" title="Configure Plesk for Full Backup" class="chapter  new-chapter" data-progress="3" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../automating_the_process/README.html" title="Automating the Process" class="chapter  new-chapter" data-progress="4" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../restoring_from_a_backup/README.html" title="Restoring From A Backup" class="chapter  new-chapter" data-progress="5" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../taking_it_a_step_further/README.html" title="Taking It A Step Further" class="chapter  new-chapter" data-progress="6" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../taking_it_a_step_further/article.html" title="Configure Retention Policies" class="chapter  " data-progress="6.1" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../taking_it_a_step_further/configure_subscription_specific_vhost_backups.html" title="Configure Subscription Specific (Vhost) Backups" class="chapter  " data-progress="6.2" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../getting_help/README.html" title="Getting Help" class="chapter  new-chapter" data-progress="7" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_16">
+                    
+                        <h1 id="configure-amazon-access">Configure Amazon Access</h1>
+<p>Before we start hacking away to get this server connected, we need to make sure that we have <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html" target="_blank">S3 buckets</a> created and the right credentials to run a backup. Log into <a href="http://amazon.com/aws" target="_blank">Amazon AWS</a>. Once you are logged in, then proceed to click on <em>S3</em> then you should be able create your Amazon S3 bucket using the on-screen prompts.</p>
+<p>In this example, I will be using a bucket named <code>myserver-pleskfull</code>, but your bucket name must be original and not conflict with any other bucket names on Amazon S3. Whatever you name this bucket, we will configure full server Plesk backups to go into this bucket. Make sure you change my code to whatever your bucket name is as you progress through the book.</p>
+<p><img src="../assets/03-S3BucketCreation.png" alt="Bucket Creation"></p>
+<pre><code>***Best Practice Note***
+If this Amazon account is only going to be accessed by one user, one server, only one user has root access to your server, and any Amazon buckets will be used only to store backups for this server… then you can proceed further down this post. If this is an existing account and you have multiple users, multiple servers, and/or you just want heightened security — then I would definitely configure policies and different security settings through Amazon IAM (Amazon Identity and Access Management). Configuring correct bucket access can help you prevent malicious users, software, etc. from gaining access to ALL of your buckets if you lock them down individually. Since I don’t want to go on a tangent talking about IAM, read that link for the AWS IAM Best Practices.
+</code></pre><h2 id="create-access-keys">Create Access Keys</h2>
+<p>When you are logged into the AWS Console, click on your name and then choose security credentials.</p>
+<p><img src="../assets/04-SecurityCredentials.png" alt="Security Credentials"></p>
+<p>Then choose <em>Create New Access Key</em>:</p>
+<p><img src="../assets/05-CreateNewAccessKey.png" alt="Create New Access Key"></p>
+<p>When you create the keys, be sure to download them — because you will NEVER see them again otherwise!</p>
+<p><img src="../assets/06-DownloadKey.png" alt="Download Key"></p>
+<p>Once you have that downloaded, run <code>aws configure</code> you will be prompted to enter your credential information. Here is the output of the <code>aws configure</code> command:</p>
+<pre><code>[root@myserver ~]# aws configure
+AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXXX
+AWS Secret Access Key [None]: 1a2b3c4d5e6f7g8h9i10j11k12k
+Default region name [None]: us-east-1
+Default output format [None]:&lt;LEAVE BLANK -- JUST PRESS ENTER&gt;
+</code></pre><h4 id="important-note-for-default-region">Important Note for Default Region</h4>
+<p>For the default region, I chose us-east-1, but you can choose whatever region you would like by seeing the list from Amazon <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html" target="_blank">here</a>. For what we are doing in the scope of this article, the regions are irrelevant to Amazon S3 but if you do any management of other AWS regions — it may be very important to set this correctly. You can also see that I left <em>Default output format [None]:</em> blank. This will default to JSON. You can read more about your options <a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="_blank">here</a>.</p>
+<h2 id="test-amazon-access">Test Amazon Access</h2>
+<p>Now that we have our authentication configured, you should now be able to test it out. Create some test files in your home folder on the server you will be backing up:</p>
+<pre><code>[root@myserver ~]# mkdir -p test-parent-folder/
+[root@myserver ~]# touch testfolder/test1.txt
+</code></pre><p>If you run <code>ll</code> or <code>ls -l</code> you should see your folder there. Now lets run the command to move it up to our S3 Bucket. Remember the bucket name that we chose from above is <code>myserver-pleskfull</code>. The syntax for the <code>aws</code> command is the following:</p>
+<pre><code class="lang-sh">aws [options] &lt;command&gt; &lt;subcommand&gt; [parameters]
+</code></pre>
+<p>Using the syntax above (advanced syntax can be found <a href="http://docs.aws.amazon.com/cli/latest/reference/" target="_blank">here</a>), we can now run our move command and watch its results:</p>
+<pre><code>[root@myserver ~]# aws s3 mv testfolder/ s3://myserver-pleskfull --recursive
+move: testfolder/test1.txt to s3://myserver-pleskfull/test1.txt
+</code></pre><p>Now when you check the bucket in the Amazon Console, you can see that it appears (notice how it copied just the file, not the folder):</p>
+<p><img src="../assets/06.01-AmazonBucketFileUploaded.png" alt="Amazon Bucket File Upload"></p>
+<p>You can also check via command line:</p>
+<pre><code>[root@myserver ~]# aws s3 ls s3://myserver-pleskfull-full --recursive
+2014-04-03 12:13:13          0 test1.txt
+</code></pre>
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../prepare_the_server/README.html" class="navigation navigation-prev " aria-label="Previous page: Prepare The Server"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../configure_plesk_for_full_backup/README.html" class="navigation navigation-next " aria-label="Next page: Configure Plesk for Full Backup"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

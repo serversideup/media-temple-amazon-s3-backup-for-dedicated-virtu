@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Prepare The Server | Media Temple Amazon S3 Backup for DV (this works on other Linux servers too)</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../configure_amazon_access/README.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1" data-basepath=".." data-revision="1406597186540">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Media Temple Amazon S3 Backup for DV (this works on other Linux servers too)</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+
+        
+
+        
+
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="prepare_the_server/README.html">
+            
+            <a href="../prepare_the_server/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> Prepare The Server
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="configure_amazon_access/README.html">
+            
+            <a href="../configure_amazon_access/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> Configure Amazon Access
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="configure_plesk_for_full_backup/README.html">
+            
+            <a href="../configure_plesk_for_full_backup/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> Configure Plesk for Full Backup
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="automating_the_process/README.html">
+            
+            <a href="../automating_the_process/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> Automating the Process
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="restoring_from_a_backup/README.html">
+            
+            <a href="../restoring_from_a_backup/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> Restoring From A Backup
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="taking_it_a_step_further/README.html">
+            
+            <a href="../taking_it_a_step_further/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> Taking It A Step Further
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="taking_it_a_step_further/article.html">
+            
+            <a href="../taking_it_a_step_further/article.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> Configure Retention Policies
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="taking_it_a_step_further/configure_subscription_specific_vhost_backups.html">
+            
+            <a href="../taking_it_a_step_further/configure_subscription_specific_vhost_backups.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> Configure Subscription Specific (Vhost) Backups
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="getting_help/README.html">
+            
+            <a href="../getting_help/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> Getting Help
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 11.11111111111111%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../prepare_the_server/README.html" title="Prepare The Server" class="chapter done new-chapter" data-progress="1" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../configure_amazon_access/README.html" title="Configure Amazon Access" class="chapter  new-chapter" data-progress="2" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../configure_plesk_for_full_backup/README.html" title="Configure Plesk for Full Backup" class="chapter  new-chapter" data-progress="3" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../automating_the_process/README.html" title="Automating the Process" class="chapter  new-chapter" data-progress="4" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../restoring_from_a_backup/README.html" title="Restoring From A Backup" class="chapter  new-chapter" data-progress="5" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../taking_it_a_step_further/README.html" title="Taking It A Step Further" class="chapter  new-chapter" data-progress="6" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../taking_it_a_step_further/article.html" title="Configure Retention Policies" class="chapter  " data-progress="6.1" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../taking_it_a_step_further/configure_subscription_specific_vhost_backups.html" title="Configure Subscription Specific (Vhost) Backups" class="chapter  " data-progress="6.2" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../getting_help/README.html" title="Getting Help" class="chapter  new-chapter" data-progress="7" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_18">
+                    
+                        <h1 id="prepare-the-server">Prepare The Server</h1>
+<h2 id="enable-root-access">Enable Root Access</h2>
+<p>Now since I’ve got the legal mumbo-jumbo taken care of, lets put the rubber to the asphalt by making sure that you have root access. We will be making changes to the system that require higher permissions, so if you are not doing this with the root account — we won’t be getting too far. By default, new Dedicated Virtual servers are shipped with root access disabled. You can do this in the Account Center at Media Temple.</p>
+<p>Now since I’ve got the legal mumbo-jumbo taken care of, lets put the rubber to the asphalt by making sure that you have root access. We will be making changes to the system that require higher permissions, so if you are not doing this with the root account — we won’t be getting too far. By default, new Dedicated Virtual servers are shipped with root access disabled. You can do this in the <a href="http://ac.mediatemple.net/" target="_blank">Account Center</a> at Media Temple.</p>
+<p><img src="../assets/01-MediaTempleControlPanel.jpg" alt="Media Temple Control Panel"></p>
+<p>When you click on that, you will need to configure BOTH items. This means you will have to <strong>enable root access</strong> and install the <strong>Developer Tools</strong>.</p>
+<p><img src="../assets/02-RootAccess.jpg" alt="Media Temple Control Panel Enable Root Access"></p>
+<p>This may take a minute or two for this to complete. That’s okay, it is a perfect amount of time to grab a coffee/beer and come back to a screen with green text saying “Enabled” and “Installed”.</p>
+<h2 id="download-and-install-amazon-aws-cli-tools">Download and Install Amazon AWS CLI Tools</h2>
+<p>Now that we have the correct access and libraries to do some compiling, we need to download <a href="http://aws.amazon.com/cli/" target="_blank">Amazon AWS CLI Tools</a> (Amazon Command Line Interface Tools). These tools will allow us to connect to Amazon’s services without installing all of this weird poo poo to get connected (been there, done that). Servers generally do not like poo poo so it is important that these tools are officially supported by Amazon and they do not make Plesk crap itself.</p>
+<p>Before we dive in and start running Amazon commands, to the date of this post these tools do require Python 2.6 or higher. To do that, simply run the <code>python --version</code> command to see what version you are running. It should echo out the version on the line below.</p>
+<h3 id="check-python-version-must-be-2-6-or-higher-">Check Python Version (must be 2.6 or higher)</h3>
+<p>Below you can see the output of the <code>python --version</code> command:</p>
+<pre><code>[root@myserver ~]# python --version
+Python 2.6.6
+</code></pre><p>Sweet, it looks like I am good to go on this server. Now we have to download the tools… OH WAIT! <em>There’s more!</em> Remember my line above where I said we do not have to download a bunch of weird poo poo? We do have to download something called <a href="http://www.pip-installer.org/" target="_blank">pip</a> (which is a package manager for Python), but trust me — this is very safe based off of the other methods that I have seen. Pip will simplify the installation process for us.</p>
+<h3 id="install-pip-python-package-manager-">Install pip (Python Package Manager)</h3>
+<p>The command below will download the latest version of <code>pip</code> and execute the installation:</p>
+<pre><code>wget --no-check-certificate https://raw.github.com/pypa/pip/master/contrib/get-pip.py; python get-pip.py
+</code></pre><h3 id="install-amazon-aws-cli">Install Amazon AWS CLI</h3>
+<p>Sweet! We have <code>pip</code> installed on our server, so lets use <code>pip</code> to install Amazon’s CLI Tools:</p>
+<pre><code>pip install awscli
+</code></pre><p>Well, that was quite simple… check for errors, but if everything looks good — we are now ready to prepare our connection to Amazon S3.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../configure_amazon_access/README.html" class="navigation navigation-next " aria-label="Next page: Configure Amazon Access"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
